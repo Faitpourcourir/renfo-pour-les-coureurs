@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Programme de renforcement - Accueil</title>
+  <title>Programme de renforcement sur 8 semaines</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -11,18 +11,18 @@
       padding: 0;
       background-color: #f2f4f7;
       color: #333;
-      text-align: center;
     }
 
     header {
+      text-align: center;
+      padding: 40px 20px 20px;
       background-color: #8092b0;
       color: white;
-      padding: 40px 20px;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.2em;
+      font-size: 2em;
     }
 
     header h2 {
@@ -30,30 +30,43 @@
       font-weight: normal;
     }
 
-    .menu {
+    .container {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 25px;
-      margin: 40px 0;
+      margin: 40px 20px 100px;
     }
 
-    .menu-btn {
-      display: inline-block;
-      padding: 15px 25px;
-      font-size: 1.2em;
+    .btn {
+      display: block;
+      width: 260px;
+      margin: 15px 0;
+      padding: 15px;
+      text-align: center;
       background-color: #8092b0;
       color: white;
       text-decoration: none;
       border-radius: 12px;
-      transition: background-color 0.3s, transform 0.2s;
-      width: 260px;
-      text-align: center;
+      font-size: 1.1em;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
     }
 
-    .menu-btn:hover {
+    .btn:hover {
       background-color: #6a7aa0;
-      transform: scale(1.05);
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #8092b0;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 0.9em;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
     }
   </style>
 </head>
@@ -64,15 +77,20 @@
     <h2>Spécial course à pied</h2>
   </header>
 
-  <section class="menu">
-    <a href="qui-suis-je.html" class="menu-btn">Qui suis-je ?</a>
-    <a href="pourquoi-renforcement.html" class="menu-btn">Pourquoi faire du renforcement ?</a>
-    <a href="conseils.html" class="menu-btn">Conseils avant de commencer</a>
-    <a href="programme.html" class="menu-btn">Accède à ton programme</a>
-  </section>
+  <main class="container">
+    <a href="quisuisje.html" class="btn">Qui suis-je ?</a>
+    <a href="pourquoi-renforcement.html" class="btn">Pourquoi faire du renforcement ?</a>
+    <a href="conseils.html" class="btn">Conseils avant de commencer</a>
+    <a href="programme.html" class="btn">Accède à ton programme</a>
+  </main>
+
+  <footer class="footer">
+    <p>Par Amélie Blanchard — diffusion interdite</p>
+  </footer>
 
 </body>
 </html>
+
 
 
 
