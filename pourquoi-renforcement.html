@@ -4,10 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pourquoi faire du renforcement ?</title>
-  <link rel="stylesheet" href="style.css">
   <style>
     body {
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       background-color: #f2f4f7;
@@ -35,14 +34,25 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
-    .content ul {
-      list-style-type: disc;
-      padding-left: 20px;
+    .content p {
+      text-align: center;
+      font-size: 1.2em;
+      margin-bottom: 20px;
     }
 
-    .content li {
-      margin: 15px 0;
+    .reasons {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #f2f4f7;
+      border-left: 6px solid #8092b0;
+      padding: 15px;
       font-size: 1.2em;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.08);
     }
 
     .back {
@@ -66,24 +76,23 @@
 </head>
 <body>
 
-  <!-- Header -->
   <header class="header">
     <h1>Pourquoi faire du renforcement ?</h1>
   </header>
 
-  <!-- Contenu -->
   <section class="content">
-    <ul>
-      <li>Amélioration de la performance</li>
-      <li>Augmentation de la puissance</li>
-      <li>Amélioration de l’économie de course</li>
-      <li>Diminution du risque de blessure</li>
-      <li>Moins de courbatures</li>
-    </ul>
+    <p>Le renforcement musculaire est essentiel pour progresser en course à pied. Voici pourquoi :</p>
+    <div class="reasons">
+      <div class="card">💪 Amélioration de la performance</div>
+      <div class="card">⚡ Augmentation de la puissance</div>
+      <div class="card">🏃 Amélioration de l’économie de course</div>
+      <div class="card">🛡️ Diminution du risque de blessure</div>
+      <div class="card">😊 Moins de courbatures</div>
+    </div>
   </section>
 
-  <!-- Bouton retour -->
   <a href="index.html" class="back">← Retour à l'accueil</a>
 
 </body>
 </html>
+
