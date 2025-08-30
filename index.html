@@ -37,34 +37,33 @@
       font-weight: 300;
     }
 
-    .weeks {
+    .buttons {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 20px;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 20px;
       gap: 15px;
     }
 
-    .week-button {
+    .buttons a {
       background-color: #8092b0;
       color: white;
       padding: 15px 25px;
-      border: none;
       border-radius: 10px;
-      font-size: 1.1em;
-      cursor: pointer;
+      font-size: 1.2em;
       text-decoration: none;
+      text-align: center;
+      width: 250px;
       transition: background-color 0.3s;
     }
 
-    .week-button:hover {
+    .buttons a:hover {
       background-color: #6a7aa0;
     }
 
     @media (max-width: 500px) {
-      .week-button {
+      .buttons a {
         width: 100%;
-        text-align: center;
       }
     }
   </style>
@@ -73,25 +72,22 @@
 
   <!-- Header -->
   <header class="header">
-    <img src="images/logo.png" alt="Logo Fait pour courir" class="logo">
+    <img src="images/logo.png" alt="Logo Fait pour Courir" class="logo">
     <h1>Programme de renforcement sur 8 semaines</h1>
     <p class="subtitle">Spécial course à pied</p>
   </header>
 
-  <!-- Boutons semaines -->
-  <section class="weeks">
-    <a href="semaine1.html" class="week-button">Semaine 1</a>
-    <a href="semaine2.html" class="week-button">Semaine 2</a>
-    <a href="semaine3.html" class="week-button">Semaine 3</a>
-    <a href="semaine4.html" class="week-button">Semaine 4</a>
-    <a href="semaine5.html" class="week-button">Semaine 5</a>
-    <a href="semaine6.html" class="week-button">Semaine 6</a>
-    <a href="semaine7.html" class="week-button">Semaine 7</a>
-    <a href="semaine8.html" class="week-button">Semaine 8</a>
+  <!-- Boutons -->
+  <section class="buttons">
+    <a href="qui-suis-je.html">Qui suis-je ?</a>
+    <a href="pourquoi-renforcement.html">Pourquoi faire du renforcement ?</a>
+    <a href="programme.html">Accède à ton programme</a>
   </section>
 
 </body>
 </html>
+
+
 
 
 
