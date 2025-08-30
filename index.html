@@ -1,98 +1,99 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Renfo pour les coureurs</title>
-<style>
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f2f4f8;
-  margin: 0;
-  padding: 0;
-  color: #333;
-}
-.header {
-  background-color: #8092b0;
-  color: white;
-  text-align: center;
-  padding: 40px 20px;
-}
-.header .logo {
-  max-width: 120px;
-  display: block;
-  margin: 0 auto 20px auto;
-}
-.subtitle {
-  font-size: 1.2em;
-  margin-top: 10px;
-}
-.container {
-  max-width: 1000px;
-  margin: 30px auto;
-  padding: 0 20px;
-  text-align: center;
-}
-h2 {
-  color: #8092b0;
-  margin-bottom: 20px;
-}
-.week-buttons {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 15px;
-  margin-top: 20px;
-}
-.btn {
-  display: inline-block;
-  background-color: #8092b0;
-  color: white;
-  text-decoration: none;
-  padding: 15px;
-  border-radius: 10px;
-  transition: background-color 0.2s;
-}
-.btn:hover {
-  background-color: #6b7a9a;
-}
-.footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 50px;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programme de renforcement - Fait pour Courir</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f4f7;
+      color: #333;
+    }
+
+    .header {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: #8092b0;
+      color: white;
+    }
+
+    .header .logo {
+      max-width: 150px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .header h1 {
+      margin: 10px 0;
+      font-size: 2em;
+    }
+
+    .header .subtitle {
+      font-size: 1.2em;
+      font-weight: 300;
+    }
+
+    .weeks {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 15px;
+    }
+
+    .week-button {
+      background-color: #8092b0;
+      color: white;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.1em;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .week-button:hover {
+      background-color: #6a7aa0;
+    }
+
+    @media (max-width: 500px) {
+      .week-button {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<header class="header">
-  <img src="https://raw.githubusercontent.com/Faitpourcourir/renfo-pour-les-coureurs/main/images/logo.png" 
-       alt="Logo Fait pour courir" class="logo">
-  <h1>Renfo pour les coureurs</h1>
-  <p class="subtitle">Programme de 8 semaines – 2 séances par semaine</p>
-</header>
+  <!-- Header -->
+  <header class="header">
+    <img src="images/logo.png" alt="Logo Fait pour courir" class="logo">
+    <h1>Programme de renforcement sur 8 semaines</h1>
+    <p class="subtitle">Spécial course à pied</p>
+  </header>
 
-<section class="container">
-  <h2>Choisissez votre semaine</h2>
-  <div class="week-buttons">
-    <a href="semaine1.html" class="btn">Semaine 1</a>
-    <a href="semaine2.html" class="btn">Semaine 2</a>
-    <a href="semaine3.html" class="btn">Semaine 3</a>
-    <a href="semaine4.html" class="btn">Semaine 4</a>
-    <a href="semaine5.html" class="btn">Semaine 5</a>
-    <a href="semaine6.html" class="btn">Semaine 6</a>
-    <a href="semaine7.html" class="btn">Semaine 7</a>
-    <a href="semaine8.html" class="btn">Semaine 8</a>
-  </div>
-</section>
-
-<footer class="footer">
-  <p>© 2025 Fait pour courir – Tous droits réservés</p>
-</footer>
+  <!-- Boutons semaines -->
+  <section class="weeks">
+    <a href="semaine1.html" class="week-button">Semaine 1</a>
+    <a href="semaine2.html" class="week-button">Semaine 2</a>
+    <a href="semaine3.html" class="week-button">Semaine 3</a>
+    <a href="semaine4.html" class="week-button">Semaine 4</a>
+    <a href="semaine5.html" class="week-button">Semaine 5</a>
+    <a href="semaine6.html" class="week-button">Semaine 6</a>
+    <a href="semaine7.html" class="week-button">Semaine 7</a>
+    <a href="semaine8.html" class="week-button">Semaine 8</a>
+  </section>
 
 </body>
 </html>
+
+
 
 
 
