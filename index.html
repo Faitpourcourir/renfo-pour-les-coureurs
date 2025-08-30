@@ -1,11 +1,92 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Renfo pour les coureurs</title>
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+  
+  <!-- CSS intégré -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f4f8;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .header {
+      background-color: #8092b0;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .header .logo {
+      max-width: 120px;
+      display: block;
+      margin: 0 auto 20px auto;
+    }
+
+    .subtitle {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      color: #8092b0;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #8092b0;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      margin-top: 15px;
+      transition: background-color 0.2s;
+    }
+
+    .btn:hover {
+      background-color: #6b7a9a;
+    }
+
+    .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
 </head>
 <body>
 
@@ -27,46 +108,8 @@
   </section>
 
   <!-- Séances -->
-  <section class="container">
-    <h2>Vos séances</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Semaine 1 – Séance 1</h3>
-        <p>Renforcement global – 30 minutes</p>
-        <a href="semaine1-seance1.html" class="btn">Voir la séance</a>
-      </div>
 
-      <div class="card">
-        <h3>Semaine 1 – Séance 2</h3>
-        <p>Renforcement bas du corps – 25 minutes</p>
-        <a href="semaine1-seance2.html" class="btn">Voir la séance</a>
-      </div>
 
-      <div class="card">
-        <h3>Semaine 2 – Séance 1</h3>
-        <p>Renforcement haut du corps – 30 minutes</p>
-        <a href="semaine2-seance1.html" class="btn">Voir la séance</a>
-      </div>
-
-      <div class="card">
-        <h3>Semaine 2 – Séance 2</h3>
-        <p>Stabilité et gainage – 20 minutes</p>
-        <a href="semaine2-seance2.html" class="btn">Voir la séance</a>
-      </div>
-    </div>
-
-    <div style="text-align:center; margin-top:30px;">
-      <a href="seances.html" class="btn">Voir toutes les séances</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <p>© 2025 Fait pour courir – Tous droits réservés</p>
-  </footer>
-
-</body>
-</html>
 
 
 
