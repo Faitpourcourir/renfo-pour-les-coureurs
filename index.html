@@ -1,113 +1,100 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Renfo pour les coureurs</title>
-  
-  <!-- CSS intégré -->
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f4f8;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-
-    .header {
-      background-color: #8092b0;
-      color: white;
-      text-align: center;
-      padding: 40px 20px;
-    }
-
-    .header .logo {
-      max-width: 120px;
-      display: block;
-      margin: 0 auto 20px auto;
-    }
-
-    .subtitle {
-      font-size: 1.2em;
-      margin-top: 10px;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: 30px auto;
-      padding: 0 20px;
-    }
-
-    h2 {
-      color: #8092b0;
-      margin-bottom: 20px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      text-align: center;
-      transition: transform 0.2s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .btn {
-      display: inline-block;
-      background-color: #8092b0;
-      color: white;
-      text-decoration: none;
-      padding: 10px 20px;
-      border-radius: 8px;
-      margin-top: 15px;
-      transition: background-color 0.2s;
-    }
-
-    .btn:hover {
-      background-color: #6b7a9a;
-    }
-
-    .footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 50px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Renfo pour les coureurs</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f4f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+.header {
+  background-color: #8092b0;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+.header .logo {
+  max-width: 120px;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+.subtitle {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+h2 {
+  color: #8092b0;
+  margin-bottom: 20px;
+}
+.week-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+.btn {
+  display: inline-block;
+  background-color: #8092b0;
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 10px;
+  transition: background-color 0.2s;
+}
+.btn:hover {
+  background-color: #6b7a9a;
+}
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+</style>
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="header">
-    <img src="https://raw.githubusercontent.com/Faitpourcourir/renfo-pour-les-coureurs/main/images/logo.png" 
-         alt="Logo Fait pour courir" class="logo">
-    <h1>Renfo pour les coureurs</h1>
-    <p class="subtitle">Programme de 8 semaines – 2 séances par semaine</p>
-  </header>
+<header class="header">
+  <img src="https://raw.githubusercontent.com/Faitpourcourir/renfo-pour-les-coureurs/main/images/logo.png" 
+       alt="Logo Fait pour courir" class="logo">
+  <h1>Renfo pour les coureurs</h1>
+  <p class="subtitle">Programme de 8 semaines – 2 séances par semaine</p>
+</header>
 
-  <!-- Présentation -->
-  <section class="container">
-    <h2>Bienvenue !</h2>
-    <p>
-      Ce programme est spécialement conçu pour les coureurs qui veulent améliorer 
-      leur force, prévenir les blessures et progresser dans leur pratique.
-    </p>
-  </section>
+<section class="container">
+  <h2>Choisissez votre semaine</h2>
+  <div class="week-buttons">
+    <a href="semaine1.html" class="btn">Semaine 1</a>
+    <a href="semaine2.html" class="btn">Semaine 2</a>
+    <a href="semaine3.html" class="btn">Semaine 3</a>
+    <a href="semaine4.html" class="btn">Semaine 4</a>
+    <a href="semaine5.html" class="btn">Semaine 5</a>
+    <a href="semaine6.html" class="btn">Semaine 6</a>
+    <a href="semaine7.html" class="btn">Semaine 7</a>
+    <a href="semaine8.html" class="btn">Semaine 8</a>
+  </div>
+</section>
 
-  <!-- Séances -->
+<footer class="footer">
+  <p>© 2025 Fait pour courir – Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
+
+
 
 
 
