@@ -13,27 +13,50 @@
       color: #333;
     }
 
+    /* Header amélioré avec logo responsive */
     header {
-      text-align: center;
-      padding: 40px 20px 20px;
       background-color: #8092b0;
       color: white;
+      padding: 30px 20px;
     }
 
-    header .logo {
-      width: 120px;       /* Ajuste la taille du logo */
+    .header-content {
+      display: flex;
+      flex-direction: column; /* mobile : logo au-dessus du texte */
+      align-items: center;
+    }
+
+    .logo {
+      max-width: 150px;
       height: auto;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
 
-    header h1 {
+    .header-text h1 {
       margin: 0;
       font-size: 2em;
+      text-align: center;
     }
 
-    header h2 {
-      margin: 10px 0 0;
+    .header-text h2 {
+      margin: 8px 0 0;
       font-weight: normal;
+      text-align: center;
+    }
+
+    @media(min-width: 768px) {
+      .header-content {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px; /* espace entre logo et texte */
+      }
+      .header-text h1 {
+        font-size: 2.2em;
+      }
+      .header-text h2 {
+        font-size: 1.2em;
+      }
     }
 
     .container {
@@ -79,9 +102,13 @@
 <body>
 
   <header>
-    <img src="logo.png" alt="Logo Fait pour Courir" class="logo">
-    <h1>Programme de renforcement sur 8 semaines</h1>
-    <h2>Spécial course à pied</h2>
+    <div class="header-content">
+      <img src="logo.png" alt="Logo Fait pour Courir" class="logo">
+      <div class="header-text">
+        <h1>Programme de renforcement sur 8 semaines</h1>
+        <h2>Spécial course à pied</h2>
+      </div>
+    </div>
   </header>
 
   <main class="container">
@@ -97,7 +124,6 @@
 
 </body>
 </html>
-
 
 
 
