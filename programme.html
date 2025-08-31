@@ -3,119 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Programme – Renforcement pour les coureurs</title>
+  <title>Ton programme - 8 semaines</title>
+  <link rel="stylesheet" href="style.css">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f6fa;
+      background-color: #f2f4f7;
       color: #333;
     }
 
-    header {
+    .header {
       text-align: center;
+      padding: 30px 20px;
       background-color: #8092b0;
-      color: #fff;
-      padding: 2rem 1rem;
+      color: white;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
+    .header h1 {
+      margin: 10px 0;
+      font-size: 2em;
     }
 
-    main {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 1rem;
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 20px;
+      gap: 15px;
     }
 
-    .seance {
-      margin: 1.5rem 0;
-      padding: 1rem;
-      border-left: 6px solid #8092b0;
+    .buttons a {
+      background-color: #8092b0;
+      color: white;
+      padding: 15px 25px;
       border-radius: 10px;
-      background-color: #fff;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
-
-    .seance strong {
-      display: block;
-      margin-bottom: 0.5rem;
-      font-size: 1.1rem;
-      color: #8092b0;
-    }
-
-    .seance a {
-      color: #333;
+      font-size: 1.2em;
       text-decoration: none;
-      font-weight: bold;
-    }
-
-    .seance a:hover {
-      text-decoration: underline;
-      color: #8092b0;
-    }
-
-    .back {
-      display: block;
       text-align: center;
-      margin: 3rem auto;
-      padding: 0.8rem 2rem;
-      font-weight: bold;
-      text-decoration: none;
-      color: #fff;
-      background-color: #8092b0;
-      border-radius: 8px;
       width: 250px;
-      transition: background-color 0.2s;
+      transition: background-color 0.3s;
     }
 
-    .back:hover {
+    .buttons a:hover {
       background-color: #6a7aa0;
     }
 
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      color: #777;
+    @media (max-width: 500px) {
+      .buttons a {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Programme – Renforcement pour les coureurs</h1>
-</header>
+  <!-- Header -->
+  <header class="header">
+    <h1>Ton programme de renforcement</h1>
+    <p class="subtitle">8 semaines - Spécial course à pied</p>
+  </header>
 
-<main>
-
-  <div class="seance">
-    <strong>Semaine 1</strong>
-    <p><a href="semaine1-seance1.html">Séance 1</a> – Circuit renfo complet</p>
-    <p><a href="semaine1-seance2.html">Séance 2</a> – Renfo basique</p>
-  </div>
-
-  <div class="seance">
-    <strong>Semaine 2</strong>
-    <p><a href="semaine2-seance1.html">Séance 1</a></p>
-    <p><a href="semaine2-seance2.html">Séance 2</a></p>
-  </div>
-
-  <!-- Tu peux rajouter les semaines suivantes ici -->
-
-</main>
-
-<a href="index.html" class="back">🏠 Retour à l'accueil</a>
-
-<footer>
-  &copy; 2025 Faitpourcourir – <a href="https://www.faitpourcourir.fr">faitpourcourir.fr</a>
-</footer>
+  <!-- Boutons semaines -->
+  <section class="buttons">
+    <a href="semaine1.html">Semaine 1</a>
+    <a href="semaine2.html">Semaine 2</a>
+    <a href="semaine3.html">Semaine 3</a>
+    <a href="semaine4.html">Semaine 4</a>
+    <a href="semaine5.html">Semaine 5</a>
+    <a href="semaine6.html">Semaine 6</a>
+    <a href="semaine7.html">Semaine 7</a>
+    <a href="semaine8.html">Semaine 8</a>
+  </section>
 
 </body>
 </html>
+
 
 
 
