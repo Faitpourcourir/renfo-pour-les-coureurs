@@ -13,7 +13,7 @@
       color: #333;
     }
 
-    /* Header amélioré avec logo responsive */
+    /* Header responsive avec logo visible sur tous les écrans */
     header {
       background-color: #8092b0;
       color: white;
@@ -27,9 +27,18 @@
     }
 
     .logo {
-      max-width: 150px;
+      display: block !important;
+      max-width: 150px;   /* taille par défaut sur desktop */
       height: auto;
       margin-bottom: 15px;
+    }
+
+    /* Logo agrandi sur mobile */
+    @media (max-width: 767px) {
+      .logo {
+        max-width: 200px !important;
+        margin-bottom: 20px;
+      }
     }
 
     .header-text h1 {
@@ -44,12 +53,12 @@
       text-align: center;
     }
 
-    @media(min-width: 768px) {
+    @media (min-width: 768px) {
       .header-content {
-        flex-direction: row;
+        flex-direction: row;        /* desktop : logo à côté du texte */
         align-items: center;
         justify-content: center;
-        gap: 20px; /* espace entre logo et texte */
+        gap: 20px;                  /* espace entre logo et texte */
       }
       .header-text h1 {
         font-size: 2.2em;
@@ -103,7 +112,7 @@
 
   <header>
     <div class="header-content">
-      <img src="logo.png" alt="Logo Fait pour Courir" class="logo">
+      <img src="images/logo.png" alt="Logo Fait pour Courir" class="logo">
       <div class="header-text">
         <h1>Programme de renforcement sur 8 semaines</h1>
         <h2>Spécial course à pied</h2>
